@@ -3,7 +3,8 @@ import math
 # Question 1 input name and print with hello
 name = input("What is your name ? ")
 age = int(input("What is your age ? "))
-print("Hello " + name + " your age after five years : " + 5+age)
+age+=5
+print("Hello " + name + " your age after five years : " + age)
 
 # Area of circle
 diameter = float(input("diameter of circle : "))
@@ -30,3 +31,21 @@ while(a**2 < 1000):
 # 1-1000
 for i in range(1, 1001, 2):
     print(i)
+
+# Print type of each value in list
+list = [1, 2, 'geeks', 4, 6, 'geeks']
+for each in list:
+    print(type(each))
+
+# create list of table 10
+list = [10*x for x in range(1, 13)]
+print(list)
+list2 = ['hello', 'geeks']
+list.append(list2)
+print(list)
+print(list[-1])
+print(list[-1][-1])
+print(len(list))
+print(list[len(list)-1])
+print(list[len(list)-1][len(list2)-1])
+# #
